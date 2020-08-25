@@ -1,0 +1,30 @@
+<%# REFACTORING %>
+<%= render 'form', restaurant_in_the_partial: @restaurant %>
+
+
+
+
+
+
+
+<%# All of these are the lines that use the FORM_FOR HELPER %>
+<%#= form_for @restaurant do |form| %>
+  <%#= form.label :name %>
+  <%#= form.text_field :name %>
+  <%#= form.label :address %>
+  <%#= form.text_field :address %>
+  <%#= form.label :rating %>
+  <%#= form.number_field :rating %>
+  <%#= form.submit %>
+<%# end %>
+
+<%# <form class="new_restaurant" id="new_restaurant" action="/restaurants" accept-charset="UTF-8" method="post">
+<input type="hidden" name="authenticity_token" value="2a3lMCkTlz0QOSHDW5ShfqiXT/JzwjWyKmN4jRXTIy+VGiiAO9bYUS3/YbXv1tmPVFU7WwF/wIEeN16OV+I9wg==">
+  <label for="restaurant_name">Name</label>
+  <input type="text" name="restaurant[name]" id="restaurant_name">
+  <label for="restaurant_address">Address</label>
+  <input type="text" name="restaurant[address]" id="restaurant_address">
+  <label for="restaurant_rating">Rating</label>
+  <input type="number" name="restaurant[rating]" id="restaurant_rating">
+  <input type="submit" name="commit" value="Create Restaurant" data-disable-with="Create Restaurant">
+</form> %>

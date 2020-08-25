@@ -1,0 +1,19 @@
+<h1>Restaurants</h1>
+
+<%# this <% is a syntax for erb. AKA.: the icecream syntax %>
+
+<% @restaurants.each do |restaurant| %>
+
+  <%# We could render these details in a partial %>
+  <%# <%= render 'restaurant_details', restaurant_in_the_partial: restaurant %>
+
+  <%# We can do the above OR the below. They are the same %>
+
+  <%# This is a link to the restaurant show %>
+  <%# link_to 'text', 'path' %>
+  <%= link_to restaurant.name, restaurant_path(restaurant.id) %>
+  
+  <%= link_to '✖', restaurant_path(restaurant.id), method: :delete, data: {confirm: 'Are you sure?'} %>
+  <%# data confirm comes from a gem called RAILS_UJS %>
+  <br>
+<% end %>

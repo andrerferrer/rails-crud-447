@@ -1,0 +1,18 @@
+<h1>Check <%= @restaurant.name %></h1>
+
+<p>
+  Find us at:
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  We have <%= @restaurant.rating %> stars!
+</p>
+
+<%# The three below are the same thing %>
+<%# <a href="/restaurants">Back</a> %>
+<%# <%= link_to 'Back', "/restaurants" %>
+<%= link_to 'Back', restaurants_path, class: 'banana' %>
+
+<%# link_to is a RailsHelper %>
+<%# A RailsHelper is a method that builds HTML for us %>

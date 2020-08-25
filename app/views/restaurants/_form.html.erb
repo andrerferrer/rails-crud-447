@@ -1,0 +1,23 @@
+<%# To create a partial %>
+<%# we call the file with _ prepending %>
+
+<%# We should NEVER access instance variables (vars with @) from a form %>
+
+<div class="w-50 m-auto">
+  <%= simple_form_for restaurant_in_the_partial do |form| %>
+    <%= form.input :name %>
+    <%= form.input :address %>
+    <%= form.input :rating %>
+    <%= form.submit %>
+  <% end %>
+  
+  <%#= form_for restaurant_in_the_partial do |form| %>
+    <%#= form.label :name %>
+    <%#= form.text_field :name %>
+    <%#= form.label :address %>
+    <%#= form.text_field :address %>
+    <%#= form.label :rating %>
+    <%#= form.number_field :rating %>
+    <%#= form.submit %>
+  <%# end %>
+</div>

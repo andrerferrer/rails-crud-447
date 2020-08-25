@@ -1,0 +1,8 @@
+<%# This is a link to the restaurant show %>
+
+<%# link_to 'text', 'path' %>
+<%= link_to restaurant_in_the_partial.name, restaurant_path(restaurant_in_the_partial.id) %>
+
+<%= link_to '✖', restaurant_path(restaurant_in_the_partial.id), method: :delete, data: {confirm: 'Are you sure?'} %>
+<%# data confirm comes from a gem called RAILS_UJS %>
+<br>
