@@ -1,24 +1,15 @@
-# README
+# Usage
+```
+cd ~/code/$USER
+git clone git@github.com:andrerferrer/rails-crud-447.git rails-crud
+cd rails-crud
+bundle install
+stt # Open this folder in Sublime Text
+rails db:create
+rails db:migrate
+rails s
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To launch a server just run the `rails s` and open a web browser at [http://localhost:3000](http://localhost:3000):
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Good Luck, Have Fun!
